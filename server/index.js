@@ -14,7 +14,7 @@ app.use(cors());
 app.use("/posts", postRoutes);
 
 const CONNECTION_URL =
-  "mongodb+srv://hamid:3131@cluster.lneeg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb+srv://<useName>:<password>@cluster.lneeg.mongodb.net/<nameOfDatabase>?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 
 mongoose
